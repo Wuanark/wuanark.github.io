@@ -1,0 +1,78 @@
+:root {
+  --azul-escuro-nivel-1: #06141B;
+  --azul-escuro-nivel-2: #11212D;
+  --azul-escuro-nivel-3: #253745;
+  --azul-escuro-nivel-4: #4A5C6A;
+  --azul-escuro-nivel-5: #9BA8AB;
+  --azul-branco: #CCD0CF;
+}
+
+body {
+  background-color: var(--azul-escuro-nivel-2);
+}
+
+.interface_menu {
+  padding: 7px 20px;
+  background-color: var(--azul-escuro-nivel-1);
+  border-bottom: 5px solid #000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--azul-branco);
+  font-family: "Fira Code";
+}
+
+li::before {
+  display: inline-block;
+  background-color: var(--azul-escuro-nivel-5);
+  align-self: center;
+  margin-right: 5px;
+  content: "";
+  width: 6px;
+  height: 6px;
+}
+
+li {
+  display: inline-flex;
+  margin-right: 40px;
+}
+
+.down {
+  margin-right: 0px;
+}
+
+.down::before {
+  content:none ;
+}
+
+.download_cv {
+  display: flex;
+  background-color: var(--azul-escuro-nivel-5);
+  color: var(--azul-escuro-nivel-1);
+  font-size: 16px;
+  font-weight: 900;
+  width: 140px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px #000;
+}
+
+.download_cv:hover {
+  content: "";
+  width: 140px;
+  height: 47px;
+  background-color: var(--azul-escuro-nivel-4);
+  color: var(--azul-branco);
+  transform-origin: right;
+  transition: 0.2s ease-in-out;
+}
